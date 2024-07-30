@@ -41,36 +41,36 @@ GOOGLE_API_KEY=your_google_api_key
 ```
 
 ## Firebase Setup
-Obtain the serviceAccountKey File:
+1. Obtain the serviceAccountKey File:
 Go to the Firebase Console: https://console.firebase.google.com/
-Select your project.
+2. Select your project.
 Click on the gear icon next to "Project Overview" and select "Project settings".
-Navigate to the "Service accounts" tab.
+3. Navigate to the "Service accounts" tab.
 Click on "Generate new private key".
-Confirm and download the serviceAccountKey.json file.
-Place this file in the root of your project directory.
+4. Confirm and download the serviceAccountKey.json file.
+5. Place this file in the root of your project directory.
 
 
 ## API Endpoints
-Create New Access Code
+* Create New Access Code
 URL: /createNewAccessCode
 Method: POST
 Body Parameters:
 phoneNumber: The phone number to receive the access code.
-Validate Access Code
+* Validate Access Code
 URL: /validateAccessCode
 Method: POST
 Body Parameters:
 accessCode: The access code received.
 phoneNumber: The phone number used.
-Generate Post Captions
+* Generate Post Captions
 URL: /generatePostCaptions
 Method: POST
 Body Parameters:
 socialNetwork: The social network for which captions are generated.
 subject: The subject of the post.
 tone: The tone of the post.
-Get Post Ideas
+* Get Post Ideas
 URL: /getPostIdeas
 Method: POST
 Body Parameters:
@@ -80,7 +80,7 @@ URL: /createCaptionsFromIdeas
 Method: POST
 Body Parameters:
 idea: The idea for generating captions.
-Save Generated Content
+* Save Generated Content
 URL: /saveGeneratedContent
 Method: POST
 Body Parameters:
@@ -88,12 +88,12 @@ topic: The topic of the content.
 data: The generated content.
 Headers:
 phone_number: The phone number of the user.
-Get User Generated Contents
+* Get User Generated Contents
 URL: /getUserGeneratedContents
 Method: GET
 Query Parameters:
 phone_number: The phone number of the user.
-Unsave Content
+* Unsave Content
 URL: /unsaveContent
 Method: POST
 Body Parameters:
