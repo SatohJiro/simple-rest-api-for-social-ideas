@@ -53,48 +53,48 @@ Click on "Generate new private key".
 
 ## API Endpoints
 * Create New Access Code
-URL: /createNewAccessCode
-Method: POST
-Body Parameters:
-phoneNumber: The phone number to receive the access code.
++ URL: /createNewAccessCode
++ Method: POST
++ Body Parameters:
++ phoneNumber: The phone number to receive the access code.
 * Validate Access Code
-URL: /validateAccessCode
-Method: POST
-Body Parameters:
-accessCode: The access code received.
-phoneNumber: The phone number used.
++ URL: /validateAccessCode
++ Method: POST
++ Body Parameters:
++ accessCode: The access code received.
++ phoneNumber: The phone number used.
 * Generate Post Captions
-URL: /generatePostCaptions
-Method: POST
-Body Parameters:
-socialNetwork: The social network for which captions are generated.
-subject: The subject of the post.
-tone: The tone of the post.
++ URL: /generatePostCaptions
++ Method: POST
++ Body Parameters:
++ socialNetwork: The social network for which captions are generated.
++ subject: The subject of the post.
++ tone: The tone of the post.
 * Get Post Ideas
-URL: /getPostIdeas
-Method: POST
-Body Parameters:
-topic: The topic for generating post ideas.
-Create Captions from Ideas
-URL: /createCaptionsFromIdeas
-Method: POST
-Body Parameters:
-idea: The idea for generating captions.
++ URL: /getPostIdeas
++ Method: POST
++ Body Parameters:
++ topic: The topic for generating post ideas.
++ Create Captions from Ideas
++ URL: /createCaptionsFromIdeas
++ Method: POST
++ Body Parameters:
++ idea: The idea for generating captions.
 * Save Generated Content
-URL: /saveGeneratedContent
-Method: POST
-Body Parameters:
-topic: The topic of the content.
-data: The generated content.
-Headers:
-phone_number: The phone number of the user.
++ URL: /saveGeneratedContent
++ Method: POST
++ Body Parameters:
++ topic: The topic of the content.
++ data: The generated content.
++ Headers:
++ phone_number: The phone number of the user.
 * Get User Generated Contents
-URL: /getUserGeneratedContents
-Method: GET
-Query Parameters:
-phone_number: The phone number of the user.
++ URL: /getUserGeneratedContents
++ Method: GET
++ Query Parameters:
++ phone_number: The phone number of the user.
 * Unsave Content
-URL: /unsaveContent
-Method: POST
-Body Parameters:
-captionId: The ID of the caption to unsave.
++ URL: /unsaveContent
++ Method: POST
++ Body Parameters:
++ captionId: The ID of the caption to unsave.
